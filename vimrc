@@ -4,7 +4,12 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-colorscheme railscasts
+if $COLORTERM == 'gnome-terminal'
+  set term=gnome-256color
+  colorscheme railscasts
+else
+  colorscheme default
+endif
 
 filetype on  " Automatically detect file types.
 set nocompatible  " We don't want vi compatibility.
