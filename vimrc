@@ -4,7 +4,7 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-
+colorscheme railscasts
 
 filetype on  " Automatically detect file types.
 set nocompatible  " We don't want vi compatibility.
