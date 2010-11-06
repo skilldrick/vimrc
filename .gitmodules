@@ -4,3 +4,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
+[submodule "bundle/php"]
+	path = bundle/php
+	url = git://github.com/vim-scripts/php.vim--Hodge.git
