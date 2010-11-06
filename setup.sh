@@ -1,5 +1,12 @@
-# Check to see if there is a non-link .vimrc
-[ -f ~/.vimrc ] && echo "Please remove existing .vimrc file" && exit
-# If there is no .vimrc make a link
-[ -h ~/.vimrc ] || ln -s ~/.vim/vimrc ~/.vimrc
+if [ ! -h ~/.vimrc ]; then
+  if [ -f ~/.vimrc ]; then
+    # There is already a real .vimrc
+    echo "Please remove existing .vimrc file"
+    exit
+  else
+    # No .vimrc so create a link
+    ln -s ~/.vim/vimrc ~/.vimrc
+  fi
+fi
+
 git submodule update --init
