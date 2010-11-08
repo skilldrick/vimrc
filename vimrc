@@ -5,6 +5,9 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 colorscheme railscasts
+if has("gui_running")
+  set guifont=Lucida_Console:h12
+endif
 
 filetype on  " Automatically detect file types.
 set nocompatible  " We don't want vi compatibility.
