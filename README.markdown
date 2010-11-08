@@ -15,3 +15,5 @@ In Windows, assuming Cygwin, clone into `$USERPROFILE/vimfiles` and run `./setup
     git clone git@github.com:skilldrick/vimrc.git vimfiles
     cd vimfiles
     ./setup.sh
+
+Please note that this vimrc will only work with a Windows installation of gvim, not a Cygwin installation.
