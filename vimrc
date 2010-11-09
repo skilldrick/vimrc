@@ -9,6 +9,8 @@ if has("gui_running")
   set guifont=Lucida_Console:h12
 endif
 
+set bufhidden=hide
+
 filetype on  " Automatically detect file types.
 set nocompatible  " We don't want vi compatibility.
  
