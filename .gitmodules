@@ -7,3 +7,6 @@
 [submodule "bundle/php"]
 	path = bundle/php
 	url = git://github.com/vim-scripts/php.vim--Hodge.git
+[submodule "bundle/json"]
+	path = bundle/json
+	url = git://github.com/leshill/vim-json.git
