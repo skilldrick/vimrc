@@ -1,6 +1,7 @@
 if [[ $OS == Windows* ]]; then
-  PROFILE_DIR=`cygpath -u $USERPROFILE`
-  cp $PROFILE_DIR/vimfiles/vimrc $PROFILE_DIR/_vimrc
+  PROFILE_DIR=`cygpath -d "$USERPROFILE"`
+  PROFILE_DIR=`cygpath -u $PROFILE_DIR`
+  cp "$PROFILE_DIR/vimfiles/vimrc" "$PROFILE_DIR/_vimrc"
 else
   SOURCE=~/.vim/vimrc
   DEST=~/.vimrc
