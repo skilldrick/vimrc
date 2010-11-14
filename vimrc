@@ -6,7 +6,11 @@ call pathogen#helptags()
 
 colorscheme railscasts
 if has("gui_running")
-  set guifont=Consolas:h12
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ 11
+  elseif has("gui_win32")
+    set guifont=Consolas:h11:cANSI
+  endif
 endif
 
 set hidden
