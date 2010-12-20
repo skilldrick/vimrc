@@ -13,3 +13,6 @@
 [submodule "JavaScript-Indent"]
 	path = JavaScript-Indent
 	url = git://github.com/vim-scripts/JavaScript-Indent.git
+[submodule "bundle/htmlspecialchars"]
+	path = bundle/htmlspecialchars
+	url = git://github.com/usualoma/vim-htmlspecialchars.git
