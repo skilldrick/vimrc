@@ -10,8 +10,8 @@
 [submodule "bundle/json"]
 	path = bundle/json
 	url = git://github.com/leshill/vim-json.git
-[submodule "JavaScript-Indent"]
-	path = JavaScript-Indent
+[submodule "bundle/JavaScript-Indent"]
+	path = bundle/JavaScript-Indent
 	url = git://github.com/vim-scripts/JavaScript-Indent.git
 [submodule "bundle/htmlspecialchars"]
 	path = bundle/htmlspecialchars
