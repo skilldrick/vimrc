@@ -58,6 +58,8 @@ if has("autocmd")
 
   autocmd BufNewFile,BufREad *.json set ft=javascript
 
+  autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
+
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
   au!
