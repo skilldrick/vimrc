@@ -7,3 +7,6 @@
 [submodule "bundle/php"]
 	path = bundle/php
 	url = git://github.com/vim-scripts/php.vim--Hodge.git
+[submodule "bundle/JavaScript-Indent"]
+	path = bundle/JavaScript-Indent
+	url = git://github.com/vim-scripts/JavaScript-Indent.git
