@@ -88,6 +88,7 @@ else
 
 endif " has("autocmd")
 
+set ffs=unix,dos
 
 " Tabs are two spaces unless otherwise defined
 set softtabstop=2
