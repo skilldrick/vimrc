@@ -60,6 +60,7 @@ if has("autocmd")
   filetype plugin indent on
 
   autocmd BufNewFile,BufREad *.json,*.jsx set ft=javascript
+  autocmd BufNewFile,BufREad *.feature set ft=cucumber
 
   autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
 
