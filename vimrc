@@ -13,6 +13,7 @@ if has("gui_running")
   endif
 endif
 
+" Hide buffers instead of closing them
 set hidden
 
 " Don't show the toolbar in gVim
@@ -95,3 +96,9 @@ set tabstop=8
 set shiftwidth=2
 set expandtab
 
+" change the mapleader from \ to ,
+let mapleader=","
+
+" Quickly edit/reload the vimrc file
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
