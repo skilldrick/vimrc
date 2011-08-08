@@ -102,3 +102,19 @@ let mapleader=","
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
+" Use magic regexes (much less faffy escaping)
+set magic
+
+" This section from Destroy All Software
+" https://www.destroyallsoftware.com/file-navigation-in-vim.html
+
+" Quick buffer switching
+vmap <leader><leader> <C-^>
+
+" Set current window at least 84 wide and as tall as possible
+" while leaving other windows 5 lines tall
+set winwidth=84
+set winheight=5
+set winminheight=5
+set winheight=999
