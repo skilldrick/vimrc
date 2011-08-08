@@ -60,7 +60,8 @@ if has("autocmd")
   " Also load indent files, to automatically do language-dependent indenting.
   filetype plugin indent on
 
-  autocmd BufNewFile,BufREad *.json set ft=javascript
+  autocmd BufNewFile,BufREad *.json,*.jsx set ft=javascript
+  autocmd BufNewFile,BufREad *.feature set ft=cucumber
 
   autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
 
@@ -89,6 +90,7 @@ else
 
 endif " has("autocmd")
 
+set ffs=unix,dos
 
 " Tabs are two spaces unless otherwise defined
 set softtabstop=2
