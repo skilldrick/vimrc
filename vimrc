@@ -114,6 +114,9 @@ set magic
 " Quick buffer switching
 vmap <leader><leader> <C-^>
 
+" Faster escape (via ghickman)
+inoremap jk <esc>
+
 " Set current window at least 84 wide and as tall as possible
 " while leaving other windows 5 lines tall
 set winwidth=84
