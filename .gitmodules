@@ -16,3 +16,6 @@
 [submodule "bundle/mustache"]
 	path = bundle/mustache
 	url = git://github.com/juvenn/mustache.vim.git
+[submodule "bundle/Command-T"]
+	path = bundle/Command-T
+	url = git@github.com:wincent/Command-T
