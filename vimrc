@@ -123,3 +123,6 @@ set winwidth=84
 set winheight=5
 set winminheight=5
 set winheight=999
+
+" Show me those sneaky tabs and trailing spaces
+set list listchars=tab:»·,trail:·
