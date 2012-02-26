@@ -84,6 +84,12 @@ if has("autocmd")
 
   augroup END
 
+  augroup CommandTExtension
+    autocmd!
+    autocmd FocusGained * CommandTFlush
+    autocmd BufWritePost * CommandTFlush
+  augroup END
+
 else
 
   set autoindent		" always set autoindenting on
