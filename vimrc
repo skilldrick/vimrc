@@ -39,6 +39,8 @@ map <silent> <m-n> :cn <cr>
 let g:rails_default_file='config/database.yml'
  
 syntax enable
+set background=dark
+colorscheme solarized
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -132,3 +134,9 @@ set winheight=999
 
 " Show me those sneaky tabs and trailing spaces
 set list listchars=tab:»·,trail:·
+
+let g:CommandTMaxFiles=20000
+
+" Make search case-insensitive when search string is all lowercase
+set ignorecase
+set smartcase
