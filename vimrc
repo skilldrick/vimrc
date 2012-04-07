@@ -4,15 +4,6 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-colorscheme railscasts
-if has("gui_running")
-  if has("gui_gtk2")
-    set guifont=Inconsolata\ 11
-  elseif has("gui_win32")
-    set guifont=Consolas:h11:cANSI
-  endif
-endif
-
 " Hide buffers instead of closing them
 set hidden
 
@@ -21,23 +12,23 @@ set guioptions-=T
 
 filetype on  " Automatically detect file types.
 set nocompatible  " We don't want vi compatibility.
- 
+
 " Add recently accessed projects menu (project plugin)
 set viminfo^=!
- 
+
 " Minibuffer Explorer Settings
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
- 
+
 " alt+n or alt+p to navigate between entries in QuickFix
 map <silent> <m-p> :cp <cr>
 map <silent> <m-n> :cn <cr>
- 
+
 " Change which file opens after executing :Rails command
 let g:rails_default_file='config/database.yml'
- 
+
 syntax enable
 set background=dark
 colorscheme solarized
@@ -120,10 +111,12 @@ set magic
 " https://www.destroyallsoftware.com/file-navigation-in-vim.html
 
 " Quick buffer switching
-vmap <leader><leader> <C-^>
+nnoremap <leader><leader> <c-^>
 
-" Faster escape (via ghickman)
-inoremap jk <esc>
+" Can't be bothered to understand ESC vs <c-c> in insert mode
+imap <c-c> <esc>
+" Clear the search buffer when hitting return
+nnoremap <CR> :nohlsearch<cr>
 
 " Set current window at least 84 wide and as tall as possible
 " while leaving other windows 5 lines tall
@@ -132,9 +125,34 @@ set winheight=5
 set winminheight=5
 set winheight=999
 
+" Always show status lines for files
+set laststatus=2
+
+" Incremental search
+set incsearch
+
+" Always highlight the current line
+set cursorline
+
+" Move around splits with <c-hjkl>
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+
+" Troll @hoverbird
+map <Left> :echo "No left key for you Patrick!"<cr>
+map <Right> :echo "No right key for you Patrick!"<cr>
+map <Up> :echo "No up key for you Patrick!"<cr>
+map <Down> :echo "No down key for you Patrick!"<cr>
+
 " Show me those sneaky tabs and trailing spaces
 set list listchars=tab:»·,trail:·
 
+" Faster escape (via ghickman)
+inoremap jk <esc>
+
+" This needs to be high for the Twitter codebase
 let g:CommandTMaxFiles=20000
 
 " Make search case-insensitive when search string is all lowercase
