@@ -81,7 +81,6 @@ if has("autocmd")
   augroup CommandTExtension
     autocmd!
     autocmd FocusGained * CommandTFlush
-    autocmd BufWritePost * CommandTFlush
   augroup END
 
 else
