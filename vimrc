@@ -10,7 +10,6 @@ set hidden
 " Don't show the toolbar in gVim
 set guioptions-=T
 
-filetype on  " Automatically detect file types.
 set nocompatible  " We don't want vi compatibility.
 
 " Add recently accessed projects menu (project plugin)
@@ -32,6 +31,8 @@ let g:rails_default_file='config/database.yml'
 syntax enable
 set background=dark
 colorscheme solarized
+" toggle background brightness with F5
+call togglebg#map("<F5>")
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -80,7 +81,6 @@ if has("autocmd")
   augroup CommandTExtension
     autocmd!
     autocmd FocusGained * CommandTFlush
-    autocmd BufWritePost * CommandTFlush
   augroup END
 
 else
