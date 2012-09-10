@@ -116,7 +116,7 @@ nnoremap <leader><leader> <c-^>
 " Can't be bothered to understand ESC vs <c-c> in insert mode
 imap <c-c> <esc>
 " Clear the search buffer when hitting return
-nnoremap <CR> :nohlsearch<cr>
+" nnoremap <CR> :nohlsearch<cr> " this disables hitting return to open Ack results :(
 
 " Set current window at least 84 wide and as tall as possible
 " while leaving other windows 5 lines tall
@@ -139,12 +139,6 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
-
-" Troll @hoverbird
-map <Left> :echo "No left key for you Patrick!"<cr>
-map <Right> :echo "No right key for you Patrick!"<cr>
-map <Up> :echo "No up key for you Patrick!"<cr>
-map <Down> :echo "No down key for you Patrick!"<cr>
 
 " Show me those sneaky tabs and trailing spaces
 set list listchars=tab:»·,trail:·
