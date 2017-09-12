@@ -152,3 +152,6 @@ let g:CommandTMaxFiles=20000
 " Make search case-insensitive when search string is all lowercase
 set ignorecase
 set smartcase
+
+set foldmethod=syntax
+set nofoldenable
