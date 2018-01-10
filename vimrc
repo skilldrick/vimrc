@@ -57,7 +57,8 @@ if has("autocmd")
   autocmd BufNewFile,BufREad *.json,*.jsx set ft=javascript
   autocmd BufNewFile,BufREad *.feature set ft=cucumber
 
-  autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
+  autocmd FileType python set tabstop=2|set shiftwidth=2|set expandtab
+  autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
 
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
@@ -148,7 +149,21 @@ inoremap jk <esc>
 
 " This needs to be high for the Twitter codebase
 let g:CommandTMaxFiles=20000
+let g:CommandTMaxCachedDirectories=0
+set wildignore+=.git,macaw/target,app/views/t1/templates,app/views/t1/client_templates,target,node_modules
 
 " Make search case-insensitive when search string is all lowercase
 set ignorecase
 set smartcase
+
+
+set foldlevelstart=0
+
+" Sane current location
+nnoremap <c-cr> zvzz
+
+" Toggle a fold
+nnoremap <space> za
+
+" Open all Folds
+nnoremap <leader>F zR
