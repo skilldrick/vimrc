@@ -167,3 +167,6 @@ nnoremap <space> za
 
 " Open all Folds
 nnoremap <leader>F zR
+
+set foldmethod=syntax
+set nofoldenable
